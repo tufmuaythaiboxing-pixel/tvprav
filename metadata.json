@@ -1,0 +1,6 @@
+{
+  "name": "Central de TV - Telegram Bot & Painel Administrativo",
+  "description": "Sistema completo profissional de Bot Telegram para gestão de acessos, check-in em grupos e catálogo de canais oficiais e autorizados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

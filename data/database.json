@@ -1,0 +1,574 @@
+{
+  "users": {
+    "99887766": {
+      "id": "99887766",
+      "first_name": "Marcos",
+      "username": "marcostest",
+      "status": "active",
+      "first_seen_at": "2026-09-28T03:01:05.184Z",
+      "last_checkin_at": "2026-09-28T03:01:05.184Z",
+      "current_access_id": "acc_1790564469546_4dm9a",
+      "is_owner": false,
+      "is_admin": false
+    },
+    "6918626496": {
+      "id": "6918626496",
+      "first_name": "Proprietário",
+      "last_name": "Central de TV",
+      "username": "OwnerCentralTV",
+      "status": "active",
+      "first_seen_at": "2026-09-28T03:00:58.023Z",
+      "is_owner": true,
+      "is_admin": true,
+      "notes": "Proprietário Absoluto com Acesso Total"
+    }
+  },
+  "accesses": {
+    "acc_1790564469546_4dm9a": {
+      "id": "acc_1790564469546_4dm9a",
+      "telegram_id": "99887766",
+      "user_name": "Marcos",
+      "start_date": "2026-09-28T03:01:09.546Z",
+      "expiration_date": "2026-10-05T03:01:09.546Z",
+      "duration_days": 7,
+      "granted_by_id": "6918626496",
+      "granted_by_name": "Proprietário",
+      "status": "active",
+      "created_at": "2026-09-28T03:01:09.546Z"
+    }
+  },
+  "checkins": {
+    "chk_1790564465184_z92z": {
+      "id": "chk_1790564465184_z92z",
+      "telegram_id": "99887766",
+      "first_name": "Marcos",
+      "username": "marcostest",
+      "group_id": "-10099887766",
+      "group_title": "🎬 Grupo Central de TV Oficial",
+      "timestamp": "2026-09-28T03:01:05.184Z",
+      "status": "approved",
+      "processed_by_id": "6918626496",
+      "processed_at": "2026-09-28T03:01:09.546Z",
+      "duration_days": 7,
+      "access_id": "acc_1790564469546_4dm9a"
+    }
+  },
+  "channels": {
+    "chan_pluto_tv": {
+      "id": "chan_pluto_tv",
+      "name": "🎬 Pluto TV",
+      "description": "Plataforma de streaming gratuito com filmes, séries e canais ao vivo, sujeito à disponibilidade regional.",
+      "category_id": "cat_filmes",
+      "category_name": "🎬 FILMES",
+      "image_url": "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://pluto.tv/",
+      "official_source": "Pluto TV / Paramount Streaming",
+      "available_regions": [
+        "BR",
+        "US",
+        "LATAM",
+        "EU"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Página oficial de streaming gratuito suportado por anúncios."
+    },
+    "chan_plex_tv": {
+      "id": "chan_plex_tv",
+      "name": "🍿 Plex",
+      "description": "Plataforma com filmes, séries e canais gratuitos, sujeito à disponibilidade regional.",
+      "category_id": "cat_filmes",
+      "category_name": "🎬 FILMES",
+      "image_url": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://watch.plex.tv/",
+      "official_source": "Plex, Inc.",
+      "available_regions": [
+        "Global",
+        "BR",
+        "US"
+      ],
+      "content_type": "vod",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Streaming oficial gratuito e legal."
+    },
+    "chan_rakuten_tv": {
+      "id": "chan_rakuten_tv",
+      "name": "🎞️ Rakuten TV",
+      "description": "Plataforma de streaming com conteúdos gratuitos e pagos, conforme disponibilidade regional.",
+      "category_id": "cat_filmes",
+      "category_name": "🎬 FILMES",
+      "image_url": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www.rakuten.tv/",
+      "official_source": "Rakuten TV Europe S.L.U.",
+      "available_regions": [
+        "EU",
+        "UK",
+        "Regiões selecionadas"
+      ],
+      "content_type": "vod",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Disponibilidade sujeita à região do usuário."
+    },
+    "chan_samsung_tv_plus": {
+      "id": "chan_samsung_tv_plus",
+      "name": "📺 Samsung TV Plus",
+      "description": "Serviço de canais e conteúdos gratuitos da Samsung, sujeito à compatibilidade e disponibilidade regional.",
+      "category_id": "cat_filmes",
+      "category_name": "🎬 FILMES",
+      "image_url": "https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www.samsungtvplus.com/",
+      "official_source": "Samsung Electronics",
+      "available_regions": [
+        "BR",
+        "US",
+        "UK",
+        "CA"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Acesso web oficial para dispositivos compatíveis."
+    },
+    "chan_lg_channels": {
+      "id": "chan_lg_channels",
+      "name": "📺 LG Channels",
+      "description": "Serviço de canais gratuitos da LG, sujeito à disponibilidade e compatibilidade do dispositivo.",
+      "category_id": "cat_filmes",
+      "category_name": "🎬 FILMES",
+      "image_url": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www.lg.com/us/lg-channels",
+      "official_source": "LG Electronics",
+      "available_regions": [
+        "US",
+        "Global"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Portal informativo e de acesso aos canais oficiais LG."
+    },
+    "chan_redbull_tv": {
+      "id": "chan_redbull_tv",
+      "name": "🏎️ Red Bull TV",
+      "description": "Plataforma oficial da Red Bull com programação, documentários e conteúdos de entretenimento.",
+      "category_id": "cat_filmes",
+      "category_name": "🎬 FILMES / DOCUMENTÁRIOS",
+      "image_url": "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www.redbull.com/int-en/tv",
+      "official_source": "Red Bull Media House",
+      "available_regions": [
+        "Global"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Conteúdo oficial 100% gratuito e aberto mundialmente."
+    },
+    "chan_dw": {
+      "id": "chan_dw",
+      "name": "🌎 DW",
+      "description": "Emissora internacional Deutsche Welle.",
+      "category_id": "cat_noticias",
+      "category_name": "📰 NOTÍCIAS / INTERNACIONAIS",
+      "image_url": "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www.dw.com/",
+      "official_source": "Deutsche Welle",
+      "available_regions": [
+        "Global"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Emissora pública internacional da Alemanha."
+    },
+    "chan_euronews": {
+      "id": "chan_euronews",
+      "name": "🌎 Euronews",
+      "description": "Canal internacional de notícias.",
+      "category_id": "cat_noticias",
+      "category_name": "📰 NOTÍCIAS / INTERNACIONAIS",
+      "image_url": "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www.euronews.com/",
+      "official_source": "Euronews",
+      "available_regions": [
+        "Global",
+        "EU"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Noticiário internacional oficial."
+    },
+    "chan_tv_brasil": {
+      "id": "chan_tv_brasil",
+      "name": "🇧🇷 TV Brasil Play",
+      "description": "Plataforma oficial da TV Brasil/EBC com programação e conteúdos disponibilizados pela emissora.",
+      "category_id": "cat_brasil",
+      "category_name": "🇧🇷 BRASIL",
+      "image_url": "https://images.unsplash.com/photo-1541872703-74c5e44368f9?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://tvbrasil.ebc.com.br/",
+      "official_source": "Empresa Brasil de Comunicação (EBC)",
+      "available_regions": [
+        "BR",
+        "Global"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Emissora pública da Empresa Brasil de Comunicação."
+    },
+    "chan_canal_gov": {
+      "id": "chan_canal_gov",
+      "name": "🏛️ Canal Gov",
+      "description": "Canal oficial do Governo Federal com programação institucional e informativa.",
+      "category_id": "cat_noticias",
+      "category_name": "📰 NOTÍCIAS",
+      "image_url": "https://images.unsplash.com/photo-1572945281869-702e5cb5b267?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www.gov.br/canalgov",
+      "official_source": "Governo Federal do Brasil",
+      "available_regions": [
+        "BR",
+        "Global"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Canal público oficial governamental."
+    },
+    "chan_camara": {
+      "id": "chan_camara",
+      "name": "🏛️ TV Câmara",
+      "description": "Canal oficial da Câmara dos Deputados.",
+      "category_id": "cat_noticias",
+      "category_name": "📰 NOTÍCIAS",
+      "image_url": "https://images.unsplash.com/photo-1526470608268-f674ce90ebd4?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www.camara.leg.br/tv/",
+      "official_source": "Câmara dos Deputados",
+      "available_regions": [
+        "BR",
+        "Global"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Sinal público e institucional aberto."
+    },
+    "chan_senado": {
+      "id": "chan_senado",
+      "name": "🏛️ TV Senado",
+      "description": "Canal oficial do Senado Federal.",
+      "category_id": "cat_noticias",
+      "category_name": "📰 NOTÍCIAS",
+      "image_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www12.senado.leg.br/tv",
+      "official_source": "Senado Federal",
+      "available_regions": [
+        "BR",
+        "Global"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Transmissão pública institucional."
+    },
+    "chan_cultura": {
+      "id": "chan_cultura",
+      "name": "📺 TV Cultura",
+      "description": "Site oficial da TV Cultura com programação e conteúdos da emissora.",
+      "category_id": "cat_brasil",
+      "category_name": "🇧🇷 BRASIL",
+      "image_url": "https://images.unsplash.com/photo-1460723237483-7a6dc9d0b212?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://tvcultura.com.br/",
+      "official_source": "Fundação Padre Anchieta",
+      "available_regions": [
+        "BR",
+        "Global"
+      ],
+      "content_type": "live",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Canal educativo e cultural de São Paulo."
+    },
+    "chan_sesctv": {
+      "id": "chan_sesctv",
+      "name": "🎭 SescTV",
+      "description": "Canal oficial do SescTV com programação cultural e audiovisual.",
+      "category_id": "cat_cultura",
+      "category_name": "🎭 CULTURA",
+      "image_url": "https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://sesctv.org.br/",
+      "official_source": "Sesc São Paulo",
+      "available_regions": [
+        "BR",
+        "Global"
+      ],
+      "content_type": "culture",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Difusão cultural pública e gratuita."
+    },
+    "chan_futura": {
+      "id": "chan_futura",
+      "name": "🎓 Futura",
+      "description": "Canal e plataforma de conteúdo educacional e cultural.",
+      "category_id": "cat_educacao",
+      "category_name": "🎓 EDUCAÇÃO",
+      "image_url": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&auto=format&fit=crop&q=80",
+      "official_url": "https://www.futura.org.br/",
+      "official_source": "Fundação Roberto Marinho",
+      "available_regions": [
+        "BR",
+        "Global"
+      ],
+      "content_type": "education",
+      "status": "active",
+      "admin_authorized": true,
+      "created_by_id": "6918626496",
+      "created_by_name": "Sistema Central de TV",
+      "created_at": "2026-09-28T03:00:58.023Z",
+      "notes": "Canal educativo com projetos comunitários."
+    }
+  },
+  "categories": {
+    "cat_filmes": {
+      "id": "cat_filmes",
+      "name": "FILMES",
+      "icon": "🎬",
+      "order": 1,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_tv_ao_vivo": {
+      "id": "cat_tv_ao_vivo",
+      "name": "TV AO VIVO",
+      "icon": "📡",
+      "order": 2,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_gratuitos": {
+      "id": "cat_gratuitos",
+      "name": "GRATUITOS",
+      "icon": "🆓",
+      "order": 3,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_brasil": {
+      "id": "cat_brasil",
+      "name": "BRASIL",
+      "icon": "🇧🇷",
+      "order": 4,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_noticias": {
+      "id": "cat_noticias",
+      "name": "NOTÍCIAS",
+      "icon": "📰",
+      "order": 5,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_educacao": {
+      "id": "cat_educacao",
+      "name": "EDUCAÇÃO",
+      "icon": "🎓",
+      "order": 6,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_esportes": {
+      "id": "cat_esportes",
+      "name": "ESPORTES AUTORIZADOS",
+      "icon": "⚽",
+      "order": 7,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_cultura": {
+      "id": "cat_cultura",
+      "name": "CULTURA",
+      "icon": "🎭",
+      "order": 8,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_internacionais": {
+      "id": "cat_internacionais",
+      "name": "INTERNACIONAIS",
+      "icon": "🌎",
+      "order": 9,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_familia": {
+      "id": "cat_familia",
+      "name": "FAMÍLIA",
+      "icon": "👨‍👩‍👧",
+      "order": 10,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_acao": {
+      "id": "cat_acao",
+      "name": "AÇÃO",
+      "icon": "🔥",
+      "order": 11,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_comedia": {
+      "id": "cat_comedia",
+      "name": "COMÉDIA",
+      "icon": "😂",
+      "order": 12,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_terror": {
+      "id": "cat_terror",
+      "name": "TERROR",
+      "icon": "👻",
+      "order": 13,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_romance": {
+      "id": "cat_romance",
+      "name": "ROMANCE",
+      "icon": "❤️",
+      "order": 14,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_ficcao": {
+      "id": "cat_ficcao",
+      "name": "FICÇÃO",
+      "icon": "🚀",
+      "order": 15,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_drama": {
+      "id": "cat_drama",
+      "name": "DRAMA",
+      "icon": "🎭",
+      "order": 16,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_classicos": {
+      "id": "cat_classicos",
+      "name": "CLÁSSICOS",
+      "icon": "⭐",
+      "order": 17,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_series": {
+      "id": "cat_series",
+      "name": "SÉRIES",
+      "icon": "📺",
+      "order": 18,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    },
+    "cat_lancamentos": {
+      "id": "cat_lancamentos",
+      "name": "LANÇAMENTOS",
+      "icon": "🆕",
+      "order": 19,
+      "created_at": "2026-09-28T03:00:58.023Z"
+    }
+  },
+  "admins": {
+    "6918626496": {
+      "telegram_id": "6918626496",
+      "name": "Proprietário Absoluto",
+      "username": "Owner",
+      "role": "owner",
+      "added_by": "SYSTEM",
+      "added_at": "2026-09-28T03:00:58.023Z"
+    }
+  },
+  "settings": {
+    "system_name": "CENTRAL DE TV",
+    "owner_id": "6918626496",
+    "bot_username": "tvpravbot",
+    "bot_active": true,
+    "webhook_mode": false,
+    "auto_expiration_check_minutes": 30,
+    "last_expiration_check": "2026-09-28T03:10:40.738Z",
+    "checkin_welcome_msg": "Para liberar seu acesso à plataforma, faça seu check-in.",
+    "telegram_token_configured": true,
+    "last_webhook_check": "2026-09-28T03:14:07.496Z",
+    "webhook_url": "https://ais-dev-q2spg6imisqk6gqlrx4ydp-174114396014.us-east1.run.app/api/telegram-webhook",
+    "last_webhook_status": "disabled"
+  },
+  "logs": [
+    {
+      "id": "log_1790565019138_w9lq",
+      "telegram_id": "6918626496",
+      "user_name": "Proprietário",
+      "action": "WEBHOOK_DISABLED",
+      "details": "Webhook desativado e alternado para Long Polling.",
+      "timestamp": "2026-09-28T03:10:19.138Z",
+      "source": "panel"
+    },
+    {
+      "id": "log_1790565012448_ja2x",
+      "telegram_id": "6918626496",
+      "user_name": "Proprietário",
+      "action": "WEBHOOK_CONFIGURED",
+      "details": "Webhook configurado para: https://ais-dev-q2spg6imisqk6gqlrx4ydp-174114396014.us-east1.run.app/api/telegram-webhook",
+      "timestamp": "2026-09-28T03:10:12.448Z",
+      "source": "panel"
+    },
+    {
+      "id": "log_1790564469546_d911",
+      "telegram_id": "99887766",
+      "user_name": "Marcos",
+      "action": "ACCESS_GRANTED",
+      "details": "Acesso de 7 dias liberado por Proprietário (6918626496)",
+      "timestamp": "2026-09-28T03:01:09.546Z",
+      "source": "panel"
+    },
+    {
+      "id": "log_1790564465184_dt82",
+      "telegram_id": "99887766",
+      "user_name": "Marcos",
+      "action": "CHECKIN_CREATED",
+      "details": "Check-in realizado no grupo \"🎬 Grupo Central de TV Oficial\"",
+      "timestamp": "2026-09-28T03:01:05.184Z",
+      "source": "bot"
+    }
+  ]
+}
